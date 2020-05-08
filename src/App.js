@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
-import '../src/components/styles.css';
+
 
 
 
@@ -31,7 +31,7 @@ class App extends React.Component {
   }
 
   toggleCompleted = itemId => {
-    //Delete consolelog
+    
     console.log('cw: index.js: App: toggleCompleted: itemId: ', itemId);
     this.setState({
       tasks: this.state.tasks.map(item => {
